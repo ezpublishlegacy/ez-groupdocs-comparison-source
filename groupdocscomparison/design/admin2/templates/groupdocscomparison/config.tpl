@@ -60,7 +60,7 @@ Actions
         <td style="padding:5px;">{$item[4]}</td>
 		<td>
 		<div style="float:left"><input style="width:30px;color:red;" type="button" value="Del" onclick="del({$index})"></div>
-		<div style="float:left"><input style="width:30px;color:green;" type="button" value="Vew" onclick="vew('{$item[0]},{$item[1]}')"></div>
+		<div style="float:left"><input style="width:30px;color:green;" type="button" value="Vew" onclick="vew('{$item[0]}/{$item[1]}')"></div>
 		</td>
     {/foreach} 
      
@@ -78,11 +78,11 @@ Actions
 			location.href = 'config?del_id='+id;
     }
 
-	function vew(embedkey, fileid){
+	function vew(id){
         cmsName = 'ezPublish'
         cmsVersion = '1.0'
 		myWindow=window.open('','','width=500,height=300')
-		myWindow.document.write('<iframe src="https://apps.groupdocs.com/document-comparison/embed/' + embedkey + '/' + fileid +'?&referer='+cmsName+'/'+cmsVersion+'" frameborder="0" width="100%" height="100%"></iframe>')
+		myWindow.document.write('<iframe src="https://apps.groupdocs.com/document-comparison/embed/' + id +'?&referer='+cmsName+'/'+cmsVersion+'" frameborder="0" width="100%" height="100%"></iframe>')
 	}
 -->
 </script>
