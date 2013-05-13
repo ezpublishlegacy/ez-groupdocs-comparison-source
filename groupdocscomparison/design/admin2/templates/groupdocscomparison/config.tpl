@@ -82,7 +82,7 @@ Actions
         cmsName = 'ezPublish'
         cmsVersion = '1.0'
 		myWindow=window.open('','','width=500,height=300')
-		myWindow.document.write('<iframe src="https://apps.groupdocs.com/document-comparison/embed/' + id +'?&referer='+cmsName+'/'+cmsVersion+'" frameborder="0" width="100%" height="100%"></iframe>')
+		myWindow.document.write('<iframe src="https://apps.groupdocs.com/document-comparison/embed/' + id +'?&referer='+cmsName+'/'+cmsVersion+'" frameborder="0" width="100%" height="100%">If you can see this text, your browser does not support iframes. Please enable iframe support in your browser or use the latest version of any popular web browsers such as Mozilla Firefox or Google Chrome. Learn how to <a href="http://groupdocs.com/apps/comparison">compare two Word documents</a> with GroupDocs Comparison application.</iframe>')
 	}
 -->
 </script>

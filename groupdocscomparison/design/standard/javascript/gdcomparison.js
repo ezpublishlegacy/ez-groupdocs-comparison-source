@@ -9319,7 +9319,7 @@ $(function(){
 					var height = val[3];
                     var cmsName = 'ezPublish'
                     var cmsVersion = '1.0'
-					var iframe = '<iframe src="http://apps.groupdocs.com/document-comparison/embed/'+embed_key+'/'+file_id+'?&referer='+cmsName+'/'+cmsVersion+'" frameborder="0" width="'+width+'" height="'+height+'"></iframe>';
+					var iframe = '<iframe src="http://apps.groupdocs.com/document-comparison/embed/'+embed_key+'/'+file_id+'?&referer='+cmsName+'/'+cmsVersion+'" frameborder="0" width="'+width+'" height="'+height+'">If you can see this text, your browser does not support iframes. Please enable iframe support in your browser or use the latest version of any popular web browsers such as Mozilla Firefox or Google Chrome. Learn how to <a href="http://groupdocs.com/apps/comparison">compare two Word documents</a> with GroupDocs Comparison application.</iframe>';
 					var re = new RegExp(key,"gi");
 					$('#main').html( $('#main').html().replace(re,iframe) );
 				});
